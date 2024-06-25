@@ -1,17 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJs 14 + Typescript + TailwindCSS
 
-## Getting Started
+## Requirements
 
-First, run the development server:
+- Node.js 20+ and yarn/npm
 
-```bash
-npm run dev
-# or
+## Tech Stack
+
+- Next v14, Typescript
+- React Query, Zustand, Next-Auth
+- TailwindCSS, Radix-UI
+
+## Getting started
+
+Run the following command on your local environment
+
+```shell
+yarn
+```
+
+Then, you can run the project locally in development mode with live reload by executing:
+
+```shell
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -19,6 +29,29 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Project structure
+
+```shell
+.
+├── README.md                       # README file
+├── .husky                          # Husky configuration
+├── public                          # Public assets folder (include images, icons and fonts)
+├── src
+│   ├── components                  # Shared base components
+│   ├── containers                  # Containers as modal, form, section,...
+│   ├── layouts                     # Layouts
+│   ├── app                         # App Routes
+│   └── stores                      # Stores
+│   └── styles                      # Declare common css variables, common css
+│   └── libs                        # Include utils and helpers
+│   └── constants                   # Variables (enums, constants)
+│   └── types                       # Define types
+│   └── services                    # Services (apis and queries)
+│   └── schemas                     # Define schemas
+│   └── middleware.ts               # Protect private routes with middleware
+└── tsconfig.json                   # TypeScript configuration
+```
 
 ## Learn More
 

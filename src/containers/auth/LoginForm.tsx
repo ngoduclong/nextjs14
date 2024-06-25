@@ -3,9 +3,6 @@
 import * as React from 'react';
 import { signIn } from 'next-auth/react';
 import { IoLogoGithub } from 'react-icons/io5';
-
-import { loginSchema } from '@/schemas/auth';
-import { cn } from '@/libs/utils';
 import { useSearchParams } from 'next/navigation';
 
 export default function LoginForm() {

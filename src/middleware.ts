@@ -21,7 +21,6 @@ export default withAuth(
     } = req;
     const isApiAuthRoute = nextUrl.pathname.startsWith(API_AUTH_PREFIX);
     const isExpiredToken = new Date(token?.exp as number) > new Date();
-    console.log('token middleware', token);
 
     if (isApiAuthRoute) {
       return NextResponse.next();
