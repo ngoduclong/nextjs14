@@ -42,12 +42,12 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 │   ├── containers                  # Containers as modal, form, section,...
 │   ├── layouts                     # Layouts
 │   ├── app                         # App Routes
-│   └── stores                      # Stores
 │   └── styles                      # Declare common css variables, common css
 │   └── libs                        # Include utils and helpers
 │   └── constants                   # Variables (enums, constants)
 │   └── types                       # Define types
 │   └── services                    # Services (apis and queries)
+│   └── stores                      # Stores
 │   └── schemas                     # Define schemas
 │   └── middleware.ts               # Protect private routes with middleware
 └── tsconfig.json                   # TypeScript configuration
